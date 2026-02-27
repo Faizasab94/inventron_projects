@@ -1,0 +1,143 @@
+.trans {
+    border: 2px solid red;
+    height: 100px;
+    width: 100px;
+    transform: translate(100px, 0);
+}
+
+.trans:hover {
+    border: 2px solid blueviolet;
+    transform: translate(300px, 200px);
+
+}
+.trans {
+    border: 2px solid red;
+    height: 100px;
+    width: 100px;
+    transform: translate(100px, 0);
+    margin: 100px;
+}
+
+.trans:hover {
+    border: 2px solid blueviolet;
+    transform: scaleY(2) scaleX(3);
+}
+.trans {
+    border: 2px solid red;
+    height: 100px;
+    width: 100px;
+    transform: translate(100px, 0);
+    margin: 100px;
+}
+
+.trans:hover {
+    border: 2px solid blueviolet;
+    transform: rotate(45deg);
+}
+.trans {
+    border: 2px solid red;
+    height: 100px;
+    width: 100px;
+    transform: translate(100px, 0);
+    margin: 100px;
+}
+
+.trans:hover {
+    border: 2px solid blueviolet;
+    transform: skewY(30deg) skewX(30deg);
+}
+@keyframes fadeclr {
+    0% {
+        background-color: blueviolet;
+    }
+
+    25% {
+        background-color: greenyellow;
+    }
+
+    50% {
+        background-color: chocolate;
+    }
+
+    75% {
+        background-color: purple;
+    }
+
+    100% {
+        background-color: brown;
+        border: 10px groove black;
+    }
+}
+.trans {
+    border: 2px solid red;
+    height: 200px;
+    width: 200px;
+    margin: 100px;
+    background-color: aqua;
+    animation-name: fadeclr;
+    animation-duration: 20xs;
+    animation-iteration-count: infinite;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 05s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slide-in {
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.bounce {
+    border: 2px solid rgb(171, 19, 19);
+    background-color: rgb(123, 0, 255);
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    animation-name: bounce;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(600px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.button
+{
+    background:blue;
+    color: white;
+    padding:10px 20px;
+    border-radius:6px;
+}
+.my-btn{
+font-size: 24px;
+}
